@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/hpcloud/tail"
+	"learn_tail/config"
 	"time"
 )
 
@@ -29,6 +30,9 @@ func TailFile(fileName string) {
 	}
 
 }
-func main() {
 
+func main() {
+	//初始化日志配置
+	config.Logconf()
+	fmt.Println("is start ....")
 }
